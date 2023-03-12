@@ -24,6 +24,9 @@ dependencies = ["sqlalchemy>=2.0.0", "agate", "python-dotenv", "typer"]
 test = ["pytest >=2.7.3", "pytest-cov", "mypy"]
 dev = ["black", "flake8", "flake8-bugbear", "pep8-naming", "flake8-builtins"]
 
+[project.scripts]
+queryrunner = "queryrunner.cli:app"
+
 [project.urls]
 Source = "https://github.com/aguinane/query-runner/"
 
